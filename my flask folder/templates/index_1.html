@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel and Image Display</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .badge {
+            font-size: 1.2rem;
+            padding: 10px 15px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+
+    <!-- Script to refresh the page every 5 seconds -->
+    <script>
+        setTimeout(function(){
+            window.location.reload(1);
+        }, 5000);  // Refresh every 5 seconds (5000 milliseconds)
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Section to display the Excel file -->
+        <h1>Defect Data</h1>
+        <div class="text-center">
+            <div>{{ data|safe }}</div>
+        </div>
+
+        <!-- Section to display images with status -->
+        <h1>Images</h1>
+        <div class="row">
+            {% for image, status in images_with_status %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="{{ url_for('static', filename='images/' + image) }}" alt="{{ image }}" class="card-img-top">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                {% if status == "OK" %}
+                                    <span class="badge badge-success">OK</span>
+                                {% else %}
+                                    <span class="badge badge-danger">NOT OK</span>
+                                {% endif %}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
