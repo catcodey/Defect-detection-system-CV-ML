@@ -1,6 +1,6 @@
 # Defect-detection-system-CV-ML
 
-###**RUN THE "complete code without button and scanner.py file".**  
+### **RUN THE "complete code without button and scanner.py file".**  
 
 Only this file correctly displays output in flask webpage. The other python file "10-12-2024..." still doesn't work as the paths are yet to be properly modified.
 
