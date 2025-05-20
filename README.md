@@ -13,3 +13,4 @@ The following defects have been identified and inspected:
 - Locknut bolt loose/tight --> keypoint detection
 
 - ALL TRAINED MODELS ARE PRESENT IN THIS KAGGLE LINK SINCE THE FILE SIZE IS TOO BIG TO UPLOAD IN GITHUB [Trained Models Kaggle Link](https://www.kaggle.com/models/bhavnab/defect-detection-training-models-and-wts)
+- captured images new folder is the save_folder. This is where the outputs are saved.
