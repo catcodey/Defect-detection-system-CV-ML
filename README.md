@@ -14,3 +14,4 @@ The following defects have been identified and inspected:
 
 - ALL TRAINED MODELS ARE PRESENT IN THIS KAGGLE LINK SINCE THE FILE SIZE IS TOO BIG TO UPLOAD IN GITHUB [Trained Models Kaggle Link](https://www.kaggle.com/models/bhavnab/defect-detection-training-models-and-wts)
 - captured images new folder is the save_folder. This is where the outputs are saved.
+- Here's another read me file which explains the file structure and how to run it [Google doc read me](https://docs.google.com/document/d/1tCC1y46SGV-2O-KF5sP12R3Th_FADdJ1Jfke5F4nMNA/edit?tab=t.0)
