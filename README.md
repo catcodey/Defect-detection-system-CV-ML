@@ -1,6 +1,6 @@
 # Defect-detection-system-CV-ML
 
-This is a dai based component inspection system built using yolov8 model to identify defects on turbo chargers in real time as they come down the assembly line. A variety of techniques have been put to use for performing various tasks. 
+This is a ai based component inspection system built using yolov8 model to identify defects on turbo chargers in real time as they come down the assembly line. A variety of techniques have been put to use for performing various tasks. 
 
 The following defects have been identified and inspected:  
 - Presence or absence of
