@@ -1,6 +1,7 @@
 # Defect-detection-system-CV-ML
 
-**RUN THE "complete code without button and scanner.py file". **  
+**RUN THE "complete code without button and scanner.py file".**  
+
 Only this file correctly displays output in flask webpage. The other python file "10-12-2024..." still doesn't work as the paths are yet to be properly modified.
 
 This is a ai based component inspection system built using yolov8 model to identify defects on turbo chargers in real time as they come down the assembly line. A variety of techniques have been put to use for performing various tasks. 
